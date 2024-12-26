@@ -1,0 +1,43 @@
+.previous-button{
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  cursor: pointer;
+}
+
+.next-button{
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  cursor: pointer;
+}
+
+.line{
+  position: relative;
+  width: 200px;
+  height: 3px;
+  background-color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.line-container{
+  width: 1025px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  left: 15%;
+  bottom: 10%;
+}
+
+.title-article{
+  position: absolute;
+  color: white;
+  font-family: Inter;
+  font-weight: 600;
+  right: 10%;
+  top: 20%;
+  font-size: 40px;
+}

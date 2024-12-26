@@ -1,0 +1,41 @@
+.product-name{
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+
+.product-price{
+  font-family: Inter;
+  font-size: 15px;
+  color: grey;
+  margin: 0;
+}
+
+.buynow-button{
+  color: white;
+  font-family: Inter;
+  font-weight: 700;
+  background-color: black;
+  border: none;
+  padding: 18px 57px;
+  border-radius: 30px;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.35s,
+  transform 0.35s;
+}
+
+.offert-container:hover .buynow-button{
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.offert-container:hover .description{
+  opacity: 0;
+}
+
+
+.description{
+  margin: 0;
+}

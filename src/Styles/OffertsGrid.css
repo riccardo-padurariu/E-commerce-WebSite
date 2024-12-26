@@ -1,0 +1,18 @@
+.offertsgrid-container{
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  margin-left: 75px;
+}
+
+.offerts-row{
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+}
+
+.side-offerts{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
