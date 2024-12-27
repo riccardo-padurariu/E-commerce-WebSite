@@ -7,23 +7,23 @@ import user from '../../Assets/User.png';
 export default function Navbar() {
   return (
     <div className="navbar-container">
-      <button className="home-button">
+      <a href="./home"><button className="home-button">
         <p className="caption">ONLINE STORE</p>
         <div className="tooltip">Go to main page</div>
-      </button>
+      </button></a>
       <div className="navbar-buttons">
         <button className="nav-but">
           <p className="caption">STORE</p>
           <div className="tooltip">Go to store</div>
         </button>
-        <button className="nav-but">
+        <a href="./phones"><button className="nav-but">
           <p className="caption">PHONES</p>
           <div className="tooltip">Go to phones</div>
-        </button>
-        <button className="nav-but">
+        </button></a>
+        <a href="./tvs"><button className="nav-but">
           <p className="caption">TV</p>
           <div className="tooltip">Go to tv</div>
-        </button>
+        </button></a>
         <button className="nav-but">
           <p className="caption">AI</p>
           <div className="tooltip">Go to AI</div>

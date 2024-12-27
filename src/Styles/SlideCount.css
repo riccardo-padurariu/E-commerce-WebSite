@@ -1,0 +1,13 @@
+.slide-count{
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  font-family: Inter;
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.slide-p{
+  margin: 4px 0 0 9.5px;
+}

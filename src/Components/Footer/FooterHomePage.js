@@ -1,12 +1,30 @@
 import React from "react";
+import '../../Styles/Footer.css';
 import searchbar from '../../Assets/Search Normal.png';
 import arrow from '../../Assets/Arrow Up Sm (2).png';
 
 export default function Footer() {
   return (
     <div className="footer-container">
+      <div className="input-footer">
+        <p className="caption-footer">
+          We can help finding what's perfect for you
+        </p>
+        <div className="input-background">
+          <img src={searchbar} className="searchbar-footer"></img>
+          <input className="parent-input-footer" type="text" placeholder="Type a keyword..."></input>
+        </div>
+      </div>
       <div className="user-footer">
         <div className="newsletter">
+          <div className="newsletter-form">
+            <p className="newsletter-title">Join our newsletter</p>
+            <p className="label">Name</p>
+            <input className="input-newsletter" placeholder="Enter your name"></input>
+            <p className="label">Email</p>
+            <input className="input-newsletter" placeholder="Enter your email"></input>
+            <button className="join-button">Join</button>
+          </div>
           <div className="copyright">Copyright &#169; 2024 Padurariu Riccardo</div>
         </div>
         <div className="socials">

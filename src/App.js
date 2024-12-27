@@ -1,14 +1,21 @@
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import Main from './Components/Main/Main';
-import Footer from './Components/Footer/Footer';
+import HomePage from './Pages/HomePage';
+import PhonesPage from './Pages/PhonesPage';
+import TVPage from './Pages/TVPage';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Main />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route index element = {<HomePage/>}></Route>
+          <Route element = {<HomePage/>} path='/home' ></Route>
+          <Route element = {<PhonesPage/>} path='/phones'></Route>
+          <Route element = {<TVPage/>} path='/tvs'></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
