@@ -14,18 +14,22 @@ export default function TVPage() {
     price = {item.price}
     image = {item.image}
     type = 'tv'
+    ending = {item.ending}
   />);
 
   let sliderArr = [];
-
-  for(let i=1;i<=arr.length/12;i++){
+  let i;
+  for(i=1;i<=arr.length/12;i++){
     sliderArr.push(i);
   }
+
+  if(sliderArr.length == 0)
+    sliderArr.push(1);
 
   const TVGridStyle = {
     marginTop: '100px',
     display: 'grid',
-    gridTemplateColumns: '310px 310px 310px 310px',
+    gridTemplateColumns: '380px 380px 380px',
     rowGap: '30px',
     columnGap: '36px'
   }

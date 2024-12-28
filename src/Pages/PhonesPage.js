@@ -14,6 +14,7 @@ export default function PhonesPage() {
     price = {item.price}
     image = {item.image}
     type = 'phone'
+    ending = {item.ending}
   />);
 
   let sliderArr = [];
@@ -37,7 +38,7 @@ export default function PhonesPage() {
     alignItems: 'center',
     justifyContent: 'space-between',
     marginLeft: '624px',
-    marginTop: '20px'
+    marginTop: '20px',
   }
 
   const pathStyles = {

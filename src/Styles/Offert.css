@@ -23,7 +23,14 @@
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.35s,
-  transform 0.35s;
+  transform 0.35s,
+  width 0.35s,
+  height 0.35s;
+}
+
+.buynow-button:active{
+  width: 174px;
+  height:50px;
 }
 
 .offert-container:hover .buynow-button{
