@@ -1,0 +1,38 @@
+.cart-item-p{
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cart-item-container{
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: 490px 490px 490px 490px;
+  margin-bottom: 10px;
+}
+
+.quantity-flexbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.delete-price{
+  display: flex;
+  flex-direction: row;
+}
+
+.change-quantity{
+  font-family: Inter;
+  font-size: 20px;
+  color: grey;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delete-from-cart{
+  font-family: Inter;
+  font-size: 20px;
+  color: red;
+  margin-left: 10px;
+}

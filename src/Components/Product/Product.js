@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom';
 import '../../Styles/Product.css';
 import React from 'react';
 
-export default function Product(props) {
+function Product(props) {
+
+  const data = props.cart;
 
   const [hover,setHover] = React.useState(false);
 
@@ -39,9 +42,27 @@ export default function Product(props) {
     fontFamily: 'Inter'
   }
 
+
   function toggleHover() {
     setHover(prev => !prev);
   }
+
+  function addToCart(item){
+    props.setCart(prev => 
+      [...prev, 
+        item
+      ]
+    );
+  }
+  console.log(props.cart);
+
+  const [quantity,setQuantity] = React.useState(1);
+
+  function handleQuantityChange(value){
+    setQuantity(value);
+  }
+
+  
 
   return (
     <div onMouseEnter={toggleHover} onMouseLeave={toggleHover} style={styles} className="product-container">
@@ -51,7 +72,7 @@ export default function Product(props) {
         <p className='product-price-grid'>{props.price}$</p>
         <div className='product-quantity-flexbox'>
           <p className='product-quantity-grid'>Quantity:</p>
-          <select className='product-quantity-selector'>
+          <select onChange={change => handleQuantityChange(change.target.value)} className='product-quantity-selector'>
             <option className='option-product'>1</option>
             <option className='option-product'>2</option>
             <option className='option-product'>3</option>
@@ -65,7 +86,16 @@ export default function Product(props) {
           </select>
         </div>
       </div>
-      <button style={buttonStyles} className='addtocart-button'>Add to cart</button>
+      <button style={buttonStyles} className='addtocart-button' onClick={() => {
+        addToCart({
+          productName: props.name,
+          productPrice: Number(quantity)*props.price,
+          productQuantity: Number(quantity)
+        })
+      }}>Add to cart</button>
+    
     </div>
   );
 }
+
+export default Product;

@@ -7,7 +7,9 @@ import arrowLeft from '../Assets/Arrow Up Contained 01.png';
 import arrowRight from '../Assets/Arrow Up Contained 2.png';
 import SlideCount from "../Components/Footer/SlideCount";
 
-export default function PhonesPage() {
+export default function PhonesPage(props) {
+
+  
 
   const arr = phoneData.map(item => <Product
     name = {item.name}
@@ -15,6 +17,8 @@ export default function PhonesPage() {
     image = {item.image}
     type = 'phone'
     ending = {item.ending}
+    cart = {props.cart}
+    setCart = {props.setCart}
   />);
 
   let sliderArr = [];
@@ -51,7 +55,7 @@ export default function PhonesPage() {
 
   return (
     <div className="phonespage-container">
-      <Navbar />
+      <Navbar cart = {props.cart} setCart = {props.setCart}/>
       <Header
         name = "Phones" 
       />

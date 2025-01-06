@@ -13,6 +13,7 @@ export default function OffertsGrid() {
         description = 'The ultimate technology of 2024 is out now'
         type = 'phone'
         id = {1}
+        ending = 'avif'
          />
       </div>
       <div className="side-offerts">
@@ -24,6 +25,7 @@ export default function OffertsGrid() {
         description = 'A new version of the past'
         type = 'phone'
         id = {2}
+        ending = 'avif'
          />
           <Offert
         isMain = {false} 
@@ -32,6 +34,7 @@ export default function OffertsGrid() {
         description = 'Enjoy the show with the double quality'
         type = 'phone'
         id = {3}
+        ending = 'avif'
          />
         </div>
         <div className="offerts-row">
@@ -42,6 +45,7 @@ export default function OffertsGrid() {
         description = 'The A+ series for you'
         type = 'phone'
         id = {4}
+        ending = 'avif'
          />
           <Offert
         isMain = {false} 
@@ -50,6 +54,7 @@ export default function OffertsGrid() {
         description = 'Enjoy the best films with your family'
         type = 'tv'
         id = {1}
+        ending = 'jpg'
          />
         </div>
       </div>

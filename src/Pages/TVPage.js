@@ -7,7 +7,7 @@ import arrowLeft from '../Assets/Arrow Up Contained 01.png';
 import arrowRight from '../Assets/Arrow Up Contained 2.png';
 import SlideCount from "../Components/Footer/SlideCount";
 
-export default function TVPage() {
+export default function TVPage(props) {
 
   const arr = TVData.map(item => <Product
     name = {item.name}
@@ -15,6 +15,8 @@ export default function TVPage() {
     image = {item.image}
     type = 'tv'
     ending = {item.ending}
+    cart = {props.cart}
+    setCart = {props.setCart}
   />);
 
   let sliderArr = [];
@@ -54,7 +56,7 @@ export default function TVPage() {
 
   return (
     <div className="tvspage-container">
-      <Navbar />
+      <Navbar cart = {props.cart} setCart = {props.setCart} />
       <Header
         name = "TV's" 
       />

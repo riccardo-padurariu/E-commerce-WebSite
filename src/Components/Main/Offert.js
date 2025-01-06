@@ -22,7 +22,7 @@ export default function Offert(props) {
 
   return (
     <div style={styles} className="offert-container">
-      <img style={styleImage} src={props.type == 'phone' ? require(`../../Assets/phone_${props.id}.jpg`) : require(`../../Assets/tv_${props.id}.jpg`)}></img>
+      <img style={styleImage} src={props.type == 'phone' ? require(`../../Assets/phone_${props.id}.${props.ending}`) : require(`../../Assets/tv_${props.id}.${props.ending}`)}></img>
       <p className="product-name">{props.name}</p>
       <p className="product-price">{props.price}$</p>
       <p className="description">{props.description}</p>
